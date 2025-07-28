@@ -1,0 +1,45 @@
+button {
+  position: relative;
+  display: inline-block;
+  font-family: "VT323", monospace;
+  width: 8em;
+  height: 2.5em;
+  font-size: 25px;
+  background-color: #c0c0c0;
+  border: 0.12em solid #7442bb;
+  color: #7442bb;
+  font-weight: lighter;
+  z-index: 1;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+/* 3D border effect using pseudo-elements */
+button::before,
+button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+button::before {
+  border-top: 0.12em solid white; /* Light borders */
+  border-left: 0.12em solid white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+button::after {
+  border-bottom: 0.16em solid darkgrey; /* Shadow borders */
+  border-right: 0.16em solid darkgrey;
+  top: 0.1em; /* Offset for 3D effect */
+  left: 0.12em;
+  right: 0;
+  bottom: 0;
+}
+button:hover {
+  border: 0.12em solid #a675fc;
+  color: #a675fc;
+}
