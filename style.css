@@ -34,7 +34,7 @@ button::before {
 button::after {
   border-bottom: 0.16em solid darkgrey; /* Shadow borders */
   border-right: 0.16em solid darkgrey;
-  top: 0.1em; /* Offset for 3D effect */
+  top: 0.12em; /* Offset for 3D effect */
   left: 0.12em;
   right: 0;
   bottom: 0;
